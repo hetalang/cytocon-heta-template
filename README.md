@@ -31,7 +31,32 @@ To run the Excel XLSM file without security warnings, you must install the signi
 
 8. Confirm that the message **“The import was successful”** is displayed.
 
-### Result
+### Issues
+
+If the certificate installation to **Trusted Publishers** does not resolve the issue, install the certificate to **Trusted Root Certification Authorities** at step (6) instead.
+
+## Check Macro Settings in Trusted Center
+
+After installing the certificate, verify the macro settings in **Trusted Center**.
+
+### How to Open Trusted Center in Office 365 Excel
+
+1. Open **Excel**.
+
+2. Click **File** → **Options**.
+
+3. In the left panel, select **Trust Center**.
+
+4. Click **Trust Center Settings…**.
+
+5. Open **Macro Settings** and review the current configuration.
+
+### Recommended Check
+
+Make sure that macro settings do not block signed macros from running.  
+If needed, change the settings, then close Excel and reopen the XLSM file.
+
+## Result
 
 After installation, the XLSM file will open without certificate or macro security warnings.
 
